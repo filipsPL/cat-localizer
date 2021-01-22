@@ -1,0 +1,21 @@
+;scaler;classifier;balanced_accuracy;balanced_accuracy STD
+0;KBinsDiscretizer-ordinal+MinMaxScaler;RandomForestClassifier;0.7240968595564183;0.08070342531824311
+0;KBinsDiscretizer-ordinal+MinMaxScaler;MLPClassifier;0.6801291545990076;0.1856539766730395
+0;KBinsDiscretizer-ordinal+StandardScaler;RandomForestClassifier;0.7423559761781606;0.05882331604253543
+0;KBinsDiscretizer-ordinal+StandardScaler;MLPClassifier;0.7269200110907453;0.07037206363538015
+0;KBinsDiscretizer-onehot+MinMaxScaler;RandomForestClassifier;;
+0;KBinsDiscretizer-onehot+MinMaxScaler;MLPClassifier;;
+0;KBinsDiscretizer-onehot+StandardScaler;RandomForestClassifier;;
+0;KBinsDiscretizer-onehot+StandardScaler;MLPClassifier;;
+0;PolynomialFeatures-2+MinMaxScaler;RandomForestClassifier;0.8250446539529761;0.032749780766177405
+0;PolynomialFeatures-2+MinMaxScaler;MLPClassifier;0.7849265976094227;0.041382666068636345
+0;PolynomialFeatures-2+StandardScaler;RandomForestClassifier;0.8142803434700854;0.0494075516774863
+0;PolynomialFeatures-2+StandardScaler;MLPClassifier;0.7902176564103559;0.047350442053767136
+0;PolynomialFeatures-interaction_only+MinMaxScaler;RandomForestClassifier;0.7741113637407518;0.0588909761679854
+0;PolynomialFeatures-interaction_only+MinMaxScaler;MLPClassifier;0.7946076433932221;0.08198945122980365
+0;PolynomialFeatures-interaction_only+StandardScaler;RandomForestClassifier;0.7501980778145572;0.05557442754047483
+0;PolynomialFeatures-interaction_only+StandardScaler;MLPClassifier;0.7932440477795577;0.06469386029834265
+0;PowerTransformer box-cox+MinMaxScaler;RandomForestClassifier;;
+0;PowerTransformer box-cox+MinMaxScaler;MLPClassifier;;
+0;PowerTransformer box-cox+StandardScaler;RandomForestClassifier;;
+0;PowerTransformer box-cox+StandardScaler;MLPClassifier;;

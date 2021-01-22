@@ -1,0 +1,12 @@
+name: cat-localizer
+channels:
+  - conda-forge
+  - main
+dependencies:
+  - scikit-learn=0.24.0=py38h658cfdd_0
+  - scikit-optimize=0.8.1=pyh9f0ad1d_0
+  - scipy=1.6.0=py38hb2138dd_0
+  - seaborn
+  - matplotlib
+  - pandas
+  - numpy=1.19.5=py38h18fd61f_1
