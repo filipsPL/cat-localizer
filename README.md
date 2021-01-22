@@ -31,7 +31,7 @@ Cat detector with BLE beacon, ESP32s, and Machine Learning
 
 This is an overwiev of a pipeline for creating an inhouse cat localizator. Actually, it can be applied to any animal (including humans) or object, and any building. The system works as follows:
 
-![](obrazki/README-e49d1311.png)
+![](obrazki/README-8d01da21.png)
 
 - The cat with a small BLE beacon, is emiting BLE signals
 - BLE signal is detected by ESP32s located here and there; they are measuring he signal strength of the BLE beacon.
