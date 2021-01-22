@@ -1,4 +1,4 @@
-Cat detector with BLE beacon, ESP32s, and Machine Learning
+Localize your cat  at home with BLE beacon, ESP32s, and Machine Learning
 =========================
 
 **tl;dr / abstract**. System which can be used for localization the position of a cat in a building using bluetooth low energy (BLE) beacons attached to the object, a set of cheap ESP32 detectors, and Machine Learning models.
