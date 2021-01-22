@@ -165,16 +165,11 @@ void doBLEScans() {
 
     for (int i = 0; i < count; i++) {
       BLEAdvertisedDevice d = foundDevices.getDevice(i);
-
-      // ----------------------------- miko ------------------------------------ //
       if (d.getAddress().toString() == cat1Mac) {
-        // jest miko
         cat1RSSI = d.getRSSI();
       }
 
-        // ----------------------------- figa ------------------------------------ //
         if (d.getAddress().toString() == cat2Mac) {
-        // jest figa
         cat2RSSI = d.getRSSI();
       }
 
