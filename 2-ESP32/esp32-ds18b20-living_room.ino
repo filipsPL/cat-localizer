@@ -17,13 +17,13 @@
 #include <WiFiUdp.h>
 
 // sensors and extras
-#include <OneWire.h>
-#include <DallasTemperature.h>
-#define ONE_WIRE_BUS 19
-
-
-OneWire oneWire(ONE_WIRE_BUS);
-DallasTemperature sensors(&oneWire);
+//#include <OneWire.h>
+//#include <DallasTemperature.h>
+//#define ONE_WIRE_BUS 19
+//
+//
+//OneWire oneWire(ONE_WIRE_BUS);
+//DallasTemperature sensors(&oneWire);
 
 
 
@@ -49,9 +49,6 @@ int cat2RSSI = -110;
 
 // BLE scan time
 int scanTime = 11; //BLE scanning time, In seconds
-
-
-// --------------------------------------------------------------------- //
 
 #include "include.h"
 
@@ -88,7 +85,7 @@ void setup() {
   digitalWrite(LED_BUILTIN, HIGH);
 
   // sensory
-  sensors.begin();
+  //  sensors.begin();
 
   // wifi
   WiFi.setHostname(esphost);
@@ -111,21 +108,20 @@ void setup() {
   timeClient.update();
 
 
-  // temperature reading from ds18b20
-  sensors.requestTemperatures(); // Send the command to get temperatures
-  delay(900);
-  float temperature = sensors.getTempCByIndex(0);
-
-  if ((temperature > -80) and (temperature < 80)) {
-    Serial.println(temperatura);
-    // send influx data
-    sendData("temp,location=home,source=esp32-living_room,room=living_room", temperature);
-  }
-  else {
-    Serial.print("doesnt work: ");
-    Serial.println(temperature);
-
-  }
+ // temperature reading from ds18b20
+//  sensors.requestTemperatures(); // Send the command to get temperatures
+//  delay(900);
+//  float temperature = sensors.getTempCByIndex(0);
+//
+//  if ((temperature > -80) and (temperature < 80)) {
+//    Serial.println(temperatura);
+//    // send influx data
+//    sendData("temp,location=home,source=esp32-living_room,room=living_room", temperature);
+//  }
+//  else {
+//    Serial.print("doesnt work: ");
+//    Serial.println(temperature);
+//  }
 
 
   // skan for BLE
