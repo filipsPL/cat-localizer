@@ -65,7 +65,7 @@ Nothing to configure nor code here :-)
 
 I provide a simple C/Arduino code for the detector. Of course it can do much more (my ESPs also measure temperature, humidity and other parameters):
 
-- [simple C/Arduino program for BLE scanning and talking with a server](2-ESP32/esp32-ds18b20-strych.ino)
+- [simple C/Arduino program for BLE scanning and talking with a server](2-ESP32/esp32-ds18b20-living_room.ino)
 
 Many things can be tuned and optimized (eg array of MAC addreses instead of single variables, reading MAC addresses from the server etc).
 
