@@ -29,7 +29,7 @@ Localize your cat  at home with BLE beacon, ESP32s, and Machine Learning
 
 # How it works
 
-This is an overwiev of a pipeline for creating an inhouse cat localizator. Actually, it can be applied to any animal (including humans) or object, and any building. The system works as follows:
+This is an overwiev of a pipeline for creating an inhouse cat locator. Actually, it can be applied to any animal (including humans) or object, and any building. The system works as follows:
 
 ![](obrazki/README-8d01da21.png)
 
@@ -46,9 +46,9 @@ This is an overwiev of a pipeline for creating an inhouse cat localizator. Actua
 # Hardware setup
 
 - **Moving object to track.** A cat. A dog is also fine. Be careful with fishes. Can be more than one. I used two cats. 💰 ~ 0 $
-- **BLE Transmitters**. [A BLE beacon](https://en.wikipedia.org/wiki/Bluetooth_low_energy_beacon). Anything will be good. I used [NotiOne](https://notione.com/) buttons, they work well and has an additional functionality (not used here). But something cheaper will work too. 💰 n x 10-20 $
+- **BLE transmitters**. [A BLE beacon](https://en.wikipedia.org/wiki/Bluetooth_low_energy_beacon). Anything will be good. I used [NotiOne](https://notione.com/) buttons, they work well and has an additional functionality (not used here). But something cheaper will work too. 💰 n x 10-20 $
 - **BLE detectors**. I used four ESP32. I guess 4-6 for moderate house/flat should be enough. One can use also modern raspberry pi with BLE. 💰 n x 4 $
-- **Data processing**. A server/computer. I worked with amd64 Debian, but any Raspberry Pi should be also good. Can be remote.
+- **Data processing**. A server/computer. I worked with amd64 Debian, but any Raspberry Pi should be also good. Can be remote. Can be done in a microcontroller (see: [further directions](#further-directions))
 - WiFi Connectivity (ESPs to the server)
 
 Optional:
@@ -198,6 +198,7 @@ For the detection you can use the code snippet in the section 6 of [jupyter note
 # Further directions
 
 - after some time of collecting the localization data for objects, we may create another ML model for predicting the localization of object in time (i.e., if it is Monday morning, the cat is near the fridge, if it is Saturday afternoon, the cat is sleeping in the bathroom, etc). This could involve another variables, like room temperature, humidity etc.
+- move the prediction step to (another) microcontroller (ESP32, ESP8266) with such (cool!) project: https://github.com/eloquentarduino/micromlgen (no need to have a dedicated server for predictions)
 
 # Acknowledgements
 
