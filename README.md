@@ -149,7 +149,7 @@ room_k          32
 room_m          28
 ```
 
-Remember to sample space available for your cats, so not only flors, but also tables, wardrobes, or chandelier etc ;-)
+Remember to sample space available for your cats, so not only floors, but also tables, wardrobes, or chandelier etc ;-)
 
 ## Algorithms evaluation and models training
 
